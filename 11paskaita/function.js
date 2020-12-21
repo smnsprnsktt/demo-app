@@ -8,20 +8,24 @@ function funcTest(num) {
   return num + 1;
 }
 
-console.log(arrayVar);
-console.log(objectVar);
-console.log(funcTest(4));
+  let arrayOfColors = [
+    'red',
+    'blue',
+    'brown',
+    ]
 
-function test() {
-    console.log('test');
-    document
-      .getElementById('container')
-      .style.backgroundColor = 'yellow';
-  }
+    let index = 0;
 
-  function test2() {
-    console.log('test2');
-    document
-      .getElementById('container')
-      .style.backgroundColor = 'blue';
-  }
+    function generateNumber() {
+      return Math.random() * 500;
+    } 
+
+    function changeColor() {
+      let randomIndex = Math.floor(arrayOfColors.length * Math.random()) 
+      document.getElementById('container').style.backgroundColor = arrayOfColors[randomIndex];
+      document.getElementById('container').style.width = `${generateNumber()}px`;
+      document.getElementById('container').style.height = `${generateNumber()}px`;
+      index = (index +1) % arrayOfColors.length;
+    }
+
+    

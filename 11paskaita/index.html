@@ -22,18 +22,19 @@ body {
 }
 
 .container {
+    position: absolute;
+    left: 50px;
     margin: 16px;
     width: 200px;
     height: 200px;
     background-color: pink;
+    transition: all 0.5s linear; 
 }
 </style>
 </head>
 <body>
-   <button onclick="test()">Click me!</button>
-   <button onclick="test2()">Click again!</button>
-   <div id="container" class="container"></div>
-
+   <button onclick="changeColor()">Click me!</button>
+    <div id="container" class="container"></div>
    <script src="logic.js"></script>
 </body>
 </html>
