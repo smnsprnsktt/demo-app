@@ -12,8 +12,6 @@ console.log(arrayVar);
 console.log(objectVar);
 console.log(funcTest(4));
 
-let und;
-
 function test() {
     console.log('test');
     document
