@@ -3,7 +3,3 @@
 let und;
 
 
-document
-  .getElementById('container')
-  .style.backgroundColor = 'red';
-
