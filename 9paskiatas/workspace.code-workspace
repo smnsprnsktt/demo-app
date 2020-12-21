@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "..\\test"
+		},
+		{
+			"path": "..\\2paskaita"
+		},
+		{
+			"path": "..\\coursera"
+		},
+		{
+			"path": "..\\3paskaita"
+		},
+		{
+			"path": "..\\4paskaita"
+		},
+		{
+			"path": "..\\namudarbai"
+		},
+		{
+			"path": "..\\5paskaita"
+		},
+		{
+			"path": "..\\6paskaita"
+		},
+		{
+			"path": "..\\page"
+		},
+		{
+			"path": "..\\7paskaita"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "9paskiatas"
+	}
+}

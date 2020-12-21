@@ -1,0 +1,32 @@
+.bandom {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: line-through;
+  }
+
+  .custom-table td {
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+  }
+  
+  .custom-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(even) {
+background-color: gray;
+  }
+
+.hover tr:hover td::after {
+  content: "0";
+  position:absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+}
+
+  
+

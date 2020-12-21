@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>Main page</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <h1>Welcome to main page</h1>
+  <h2>Lorem ipsum</h2>
+  <p class="paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+ 
+  
+  <style>
+
+  </style>
+  
+    <style>
+        a {
+            text-decoration: none;
+        }
+    
+      a[href^="https://"] {
+          color: green
+      }
+
+      a[target=_blank] {
+          text-decoration: underline;
+      }
+   
+    </style>
+    <form>
+      <input type="text" name="text">
+      <input type="email" name="text-address" placeholder="Cat">
+      <input type="password" name="text-password" placeholder="Dog">
+      <input type="text" name="test" placeholder="Cow">
+      <input type="text">
+    </form>
+    <div>
+      <a href="https://google.com" target="_blank">Google</a>
+      <a href="https://google.lt">Google</a>
+      <a href="https://google.co.uk">Google</a>
+      <a href="http://google.com" target="_blank">Google</a>
+    </div>
+
+   
+      <table class="test">
+        <tr>
+          <th>1</th>
+          <th class="hover" colspan="2">2</th>
+          <th>1</th>
+          <th>1</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="hover" colspan="2">2</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="hover" colspan="2">2</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="hover" colspan="2" rowspan="2">2x2</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </table>
+    
+      <style>
+        .test,
+        .test th,
+        .test td {
+          border: 2px black solid;
+          border-collapse: collapse;
+          padding: 10px;
+          margin: 10px;
+          vertical-align: top;
+          text-align: center;
+          position: relative;
+        }
+    
+        .test tr:hover {
+          background-color: rgba(255, 228, 196, .4);
+          border: solid;
+          border-style: solid;
+          height: 100px;
+        }
+    
+        .test tr{
+            height: 10px;
+            transition: height 800ms ease-out;
+            
+        }
+
+        .test tr:nth-child(even) {
+          background-color: beige;
+        }
+    
+    
+        .test tr:hover td::after {
+          content: "0";
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+          left: 0;
+        }
+
+      td[colspan="2"] {
+          border: dotted;
+      }
+    
+      td[rowspan="2"] {
+          color: brown;
+          border: solid;
+          background-color: cadetblue;
+      }
+        
+   </style>
+
+
+</body>
+
+
+</html>

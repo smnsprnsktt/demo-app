@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Main page</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+</body>
+<table class="test">
+    <tr>
+      <th>1</th>
+      <th class="hover" colspan="2">2</th>
+      <th>1</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="hover" colspan="2">2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="hover" colspan="2">2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="hover" colspan="2" rowspan="2">2x2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </table>
+
+  <style>
+    .test,
+    .test th,
+    .test td {
+      border: 2px black solid;
+      border-collapse: collapse;
+      padding: 10px;
+      margin: 10px;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+    }
+
+
+    .test tr:hover {
+      background-color: rgba(144, 247, 48, 0.4);
+      border: solid;
+      border-style: solid;
+      
+    }
+
+    .test td:hover, th:hover {
+        width: 100px;
+        text-align: left;
+    }
+
+    .test tr:nth-child(even) {
+      background-color: beige;
+    }
+
+    .test td:hover::after, th:hover::after{
+    content: "0";
+    width: 100%;
+    position: absolute;
+    left: 100px;
+    }
+
+  </style>
+  </body>
+  </html>

@@ -1,0 +1,22 @@
+.custom-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 64px;
+}
+
+.custom-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  #table-only.custom-table {
+      background-color: coral;
+  }
+  .styled-input {
+      color: red;
+      margin-bottom: 24px;
+  }
+  .styled-input:focus::after {
+      outline:red auto 1px
+  }
+  /* tr:nth-child(odd) */

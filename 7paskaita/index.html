@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            height: 300vh;
+            justify-content: space-evenly;
+            background-color: aqua;
+            /* align-items: flex-end;
+                align-content: flex-end; */
+            flex-direction: row;
+        }
+
+        /* .element-1 {
+                background-color: peachpuff;
+            }
+
+            .element-2 {
+                background-color: aliceblue;
+            }
+
+            .element-3 {
+                background-color:grey;
+            }
+
+            .element-4 {
+                background-color: purple
+            }
+
+            .element-5 {
+                background-color: cadetblue
+            } */
+
+        .navigation {
+            background-color: cadetblue;
+            max-width: 350px;
+            flex: 1;
+        }
+
+        .content {
+            background-color: whitesmoke;
+            flex: 1;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .feed {
+            background-color: saddlebrown;
+            min-width: 350px;
+            flex: 0;
+        }
+
+        .navigation-links {
+            display: flex;
+            position: sticky;
+            flex-direction: column;
+            top: 0;
+            background-color: cornsilk;
+        }
+
+        .navigation-links>a {
+            width: 100%;
+            margin: 12px 0;
+            text-align: center;
+        }
+
+        .test {
+            height: 150px;
+        }
+
+        div[id|=blog] {
+            flex: 1;
+        }
+
+        #blog-1 {
+            background-color: darkcyan;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: flex-start;
+            align-items: stretch;
+        }
+
+        #blog-2 {
+            background-color: blanchedalmond;
+        }
+
+        #blog-3 {
+            background-color: darkolivegreen;
+        }
+
+        #blog-4 {
+            background-color: greenyellow;
+        }
+
+        .img-container {
+            min-width: 64px;
+            min-height: 64px;
+            margin: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: .8rem;
+        }
+    </style>
+
+    <div class="container">
+        <!-- <div class="element-1"></div>
+            <div class="element-2"></div>
+            <div class="element-3">lol</div>
+            <div class="element-4"></div>
+            <div class="element-5"></div> -->
+        <div class="navigation">
+            <div class="test"></div>
+            <div class="navigation-links">
+                <a href="#blog-1">Blogas 1</a>
+                <a href="#blog-2">Blogas 2</a>
+                <a href="#blog-3">Blogas 3</a>
+                <a href="#blog-4">Blogas 4</a>
+            </div>
+        </div>
+        <div class="content">
+            <div id="blog-1"></div>
+            <div id="blog-2"></div>
+            <div id="blog-3"></div>
+            <div id="blog-4"></div>
+        </div>
+        <div class="feed"></div>
+    </div>
+    <script>
+        const blog1 = document.getElementById('blog-1');
+        // Keisti 100 norint gauti kitoki kieki
+        for (let i = 0; i < 100; i += 1) {
+            const element = document.createElement('div');
+            element.className = 'img-container';
+            element.style.backgroundColor = `#${((1 << 24) * Math.random() | 0).toString(16)}`;
+            element.innerText = `TEST ${i}`;
+            // element.innerText = 'Galima ir taip';
+            blog1.appendChild(element);
+        }
+    </script>
+</head>
+
+</html>
