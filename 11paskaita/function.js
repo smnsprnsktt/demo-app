@@ -16,16 +16,29 @@ function funcTest(num) {
 
     let index = 0;
 
-    function generateNumber() {
-      return Math.random() * 500;
+    function generateNumber(multiplier) {
+      return Math.random() * multiplier;
     } 
 
+    function toggleBox() {
+      let containerElement = document.getElementById('container');
+
+      if (containerElement.style.height === '0px') {
+        containerElement.style.height = '50px';
+        document.getElementById('box').innerHTML = "Collapse!";
+      } else {
+        containerElement.style.height = '0px';
+        document.getElementById('box').innerHTML = "Expand!";
+      }
+    }
+    
     function changeColor() {
-      let randomIndex = Math.floor(arrayOfColors.length * Math.random()) 
-      document.getElementById('container').style.backgroundColor = arrayOfColors[randomIndex];
-      document.getElementById('container').style.width = `${generateNumber()}px`;
-      document.getElementById('container').style.height = `${generateNumber()}px`;
-      index = (index +1) % arrayOfColors.length;
+      let containerElement = document.getElementById('container');
+
+      let randomIndex = Math.floor(arrayOfColors.length * Math.random()) % arrayOfColors.length; 
+      containerElement.style.backgroundColor = arrayOfColors[randomIndex];
+      containerElement.style.width = `${generateNumber(100)}px`;
+      containerElement.style.height = `${generateNumber(100)}px`;
     }
 
     

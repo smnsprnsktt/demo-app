@@ -30,11 +30,20 @@ body {
     background-color: pink;
     transition: all 0.5s linear; 
 }
+
+.boxButton {
+}
+
+.clickme {
+}
 </style>
 </head>
 <body>
-   <button onclick="changeColor()">Click me!</button>
+   <button onclick="changeColor()" class="clickme">Click me!</button>
+   <button onclick="toggleBox()" id="box" class="boxButton">Collapse!</button>
+
     <div id="container" class="container"></div>
    <script src="logic.js"></script>
+
 </body>
 </html>
