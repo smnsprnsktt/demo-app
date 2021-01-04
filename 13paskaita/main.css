@@ -1,0 +1,11 @@
+#cart {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#cart > div > span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
