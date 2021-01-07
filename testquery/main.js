@@ -7,16 +7,18 @@ function test() {
   for (let i = 0; i < 3; i += 1) {
     const square = document.createElement("div");
     square.className = "square";
+    square.id = "square";
     container.appendChild(square);
   }
 }
 
 function onLoad() {
-  const container = document.getElementById("container");
   test();
   window.addEventListener("click", function (event) {
-    event.target.style.backgroundColor = "red";
-    console.log(event);
+    if (event.target.id === "square") {
+      event.target.style.backgroundColor = "red";
+    }
+    console.log(event.target.id);
     if (event.target.nextSibling) {
       event.target.nextSibling.style.backgroundColor = "grey";
     }
@@ -24,7 +26,6 @@ function onLoad() {
       event.target.previousSibling.style.backgroundColor = "grey";
     }
   });
-  console.log(container);
 }
 
 window.onload = onLoad;
