@@ -2,12 +2,15 @@
 
 const square = document.createElement("div");
 
+const list = [];
+
 function test() {
   const container = document.getElementById("container");
   for (let i = 0; i < 3; i += 1) {
     const square = document.createElement("div");
     square.className = "square";
     square.id = "square";
+    list.push(square);
     container.appendChild(square);
   }
 }
@@ -15,16 +18,10 @@ function test() {
 function onLoad() {
   test();
   window.addEventListener("click", function (event) {
-    if (event.target.id === "square") {
-      event.target.style.backgroundColor = "red";
+    for (let i = 0; i < list.length; i += 1) {
+      list[i].style.backgroundColor = "grey";
     }
-    console.log(event.target.id);
-    if (event.target.nextSibling) {
-      event.target.nextSibling.style.backgroundColor = "grey";
-    }
-    if (event.target.previousSibling) {
-      event.target.previousSibling.style.backgroundColor = "grey";
-    }
+    event.target.style.backgroundColor = "red";
   });
 }
 
