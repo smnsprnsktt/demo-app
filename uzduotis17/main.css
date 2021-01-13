@@ -1,0 +1,34 @@
+html,
+body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body {
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    padding: 50px
+}
+
+#content {
+
+    position: absolute;
+    left: 50px;
+    margin: 16px;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+   
+    
+
+    
+}
