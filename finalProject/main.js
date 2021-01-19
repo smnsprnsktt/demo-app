@@ -4,7 +4,7 @@ let info = [];
 
 let pointsCount = 0;
 
-const totalRounds = 1;
+const totalRounds = 15;
 
 let roundsPlayed = 0;
 
