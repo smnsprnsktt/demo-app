@@ -4,9 +4,75 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: aliceblue;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  background-color: rgb(213, 233, 241);
+  flex-direction: column;
+  height: 100%;
+}
+
+.entryTitle {
+  font-size: 35px;
+  color: rgba(252, 253, 244, 0.952);
+  background-color: rgb(135, 183, 202);
+  width: 100%;
+  justify-content: center;
+  border-bottom: 2px solid grey;
 }
 
 .choices > button {
-  background-color: rgb(125, 240, 205);
+  align-items: space-evenly;
+  cursor: pointer;
+  margin: 5px;
+  border-color: black;
+}
+
+.container {
+  width: auto;
+  text-align: center;
+  margin-top: 250px;
+}
+
+#roundsQuestion {
+  margin-bottom: 50px;
+}
+
+#roundNumber {
+  font-size: 3vw;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  text-align: center;
+  color: rgb(32, 13, 24);
+  border-bottom: 1px solid black;
+}
+
+#flagsContainer {
+  height: 350px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#flagsContainer img {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+div > p {
+  font-size: 2vw;
+}
+
+#score {
+  font-size: 2vw;
+  margin-top: 15px;
 }
