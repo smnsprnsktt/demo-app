@@ -38,7 +38,9 @@ function loadNewFlag() {
 function startNewGame(numberOfRounds) {
   roundsPlayed = 0;
   pointsCount = 0;
-  totalRounds = numberOfRounds;
+  if (numberOfRounds) {
+    totalRounds = numberOfRounds;
+  }
   let score = document.querySelector("#score");
   score.innerHTML = `${pointsCount} correct out of  ${totalRounds} ${
     pointsCount > 0 ? "😮" : "😅"
